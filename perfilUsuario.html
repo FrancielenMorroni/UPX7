@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPX</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html"><img src="img/logoCarshare.png" alt="Logo do CarShare" class="logo"> </a>
+
+        <div class="dropdown">
+            <button class="dropbtn">
+                <img class="menuImg" src="img/menu.png">
+            </button>
+            <div class="dropdown-content">
+              <a href="index.html">Página Inicial</a>
+              <a href="#">Mensagens</a>
+              <a href="#">Notificações</a>
+              <a href="servicosCadastrados.html">Serviços Cadastrados</a>
+              <a href="perfilUsuario.html">Meu Perfil</a>
+              <a href="login.html">Sair</a>
+            </div>
+        </div>
+        
+    </header>
+    <main class="main-usuario">
+        <div class="perfil">
+            <div>
+                <img class="perfil-imagem" src="img/carro.png" alt="">
+            </div>
+            <div>
+                <ul class="perfil-informacoes">
+                    <li class="perfil-lista">
+                        <label class="perfil-label" for="loginPerfil">Login</label>
+                        <input class="perfil-input" type="email" id="loginPerfil" name="email" placeholder="Email" required>
+                        <button class="perfil-botao">Alterar Senha</button>
+                    </li>
+                    <li class="perfil-lista">
+                        <label class="perfil-label" for="nomeUsuario">Nome</label>
+                        <input class="perfil-input" type="text" id="nome" name="nomeUsuario" placeholder="Nome" required>
+                    </li>                   
+                    <li class="perfil-lista">
+                        <label class="perfil-label" for="dataNascimento">Data de Nascimento</label>
+                        <input class="perfil-input" type="date" name="nomeUsuario" id="dataNascimento" placeholder="Insira a data">
+                    </li>
+                    <li class="perfil-lista">
+                        <label class="perfil-label" for="telefone">Telefone</label>
+                        <input class="perfil-input" type="tel" name="telefone" id="telefone" placeholder="Número de Telefone" pattern="\(\d{2}\) \d{4,5}-\d{4}">
+                    </li>
+                    <li class="perfil-lista">
+                        <button class="perfil-botao" type="submit">Salvar Alterações</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer class="rodape">
+        <ul class="rodape-lista">
+            <li class="lista-link">
+                <p class="rodape-texto">® 2025 .</p>
+            </li>
+            <li class="lista-link">
+                <a href="#">Idioma</a>
+            </li>
+            <li class="lista-link">
+                <a href="#">Termos</a>
+            </li>
+            <li class="lista-link">
+                <a href="#">Privacidade</a>
+            </li>
+            <li class="lista-link">
+                <a href="#">Sobre a empresa</a>
+            </li>
+            <li class="lista-link">
+                <a href="#">Ajuda</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>

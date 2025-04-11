@@ -1,0 +1,34 @@
+@import url("login.css");
+@import url("header.css");
+@import url("paginaInicial.css");
+@import url("cadastroUsuario.css");
+@import url("cadastroVeiculo.css");
+@import url("servicosCadastrados.css");
+@import url("perfilUsuario.css");
+@import url("rodape.css");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+:root {
+    --cor-de-fundo: #EBECEE;
+    --branco: #FFFFFF;
+    --azul-claro: #AFDDFF;
+    --azul-escuro:#102842;
+    --azul: #60B5FF;
+    --vermelho: #FF0000;
+    --azul-desgrade:  linear-gradient(98deg, #011F26 35.49%, #025E73 165.37%);
+    --fonte-principal: 'Poppins', sans-serif;    
+    --fonte-secundaria: 'Josefin Sans', sans-serif;
+    --preto: #000000;
+    --cinza: #d0d3d8;
+    --bege: #BFB78F;
+    --laranja: #FF9149;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;    
+}
+

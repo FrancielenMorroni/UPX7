@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPX</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header class="header">
+        <img src="img/logoCarshare.png" alt="Logo do CarShare" class="logo">
+    </header>
+    <main>
+        <div class="main-usuario">
+            <ul class="usuario">
+                <li class="cadastro-usuario">
+                    <label class="usuario-label" for="nome">Nome:</label>
+                    <input class="usuario-input" type="text" id="nome" name="nome" placeholder="Nome" required>
+                </li>
+                <li class="cadastro-usuario">
+                    <label class="usuario-label" for="email">Email:</label>
+                    <input class="usuario-input" type="email" id="email" name="email" placeholder="Email" required>            
+                </li>
+                <li class="cadastro-usuario">
+                    <label class="usuario-label" for="senha">Senha:</label>
+                    <input class="usuario-input" type="password" id="senha" name="password"
+                    placeholder="Digite sua senha"  maxlength="10">
+                </li>
+                <li class="cadastro-usuario">                
+                    <button class="usuario-botao" type="submit" onclick="cadastroUsuario()">Criar Usuários</button>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <footer class="rodape">
+        <ul class="rodape-lista">
+            <li class="lista-link">
+                <p class="rodape-texto">® 2025 .</p>
+            </li>
+            <li class="lista-link">
+                <a href="#">Idioma</a>
+            </li>
+            <li class="lista-link">
+                <a href="#">Termos</a>
+            </li>
+            <li class="lista-link">
+                <a href="#">Privacidade</a>
+            </li>
+            <li class="lista-link">
+                <a href="#">Sobre a empresa</a>
+            </li>
+            <li class="lista-link">
+                <a href="#">Ajuda</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>
