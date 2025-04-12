@@ -18,12 +18,13 @@
                 <form id="signupForm">
                     <ul class="usuario">
                         <li class="cadastro-usuario">
-                            <label class="usuario-label" for="fullName">Nome Completo</label>
-                            <input class="usuario-input" type="text" id="fullName" name="fullName" placeholder="Digite seu nome completo" required>
+                            <label class="usuario-label" id="photoLabel" for="photo">Foto de perfil</label>
+                            <img id="profilePreview" src="img/foto-perfil-generica.jpg" alt="Pré-visualização da foto de perfil">
+                            <input class="usuario-input" type="file" id="photo" name="photo" accept="image/*" required>
                         </li>
                         <li class="cadastro-usuario">
-                            <label class="usuario-label" for="phone">Telefone</label>
-                            <input class="usuario-input" type="tel" id="phone" name="phone" placeholder="Digite seu telefone" required>
+                            <label class="usuario-label" for="fullName">Nome Completo</label>
+                            <input class="usuario-input" type="text" id="fullName" name="fullName" placeholder="Digite seu nome completo" required>
                         </li>
                         <li class="cadastro-usuario">
                             <label class="usuario-label" for="email">E-mail</label>
@@ -42,7 +43,7 @@
                         </li>
                     </ul>
                 </form>
-                <p class="signup-text">Já tem conta? <a href="index.html" class="signup-link">Entre aqui</a></p>
+                <p class="signup-text", id="comeback">Já tem conta? <a href="index.html" class="signup-link", id="imhere">Entre aqui</a></p>
             </div>
         </div>
     </main>

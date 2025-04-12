@@ -1,3 +1,25 @@
+// Função para converter a imagem em Base64
+function getBase64(file, callback) {
+    const reader = new FileReader();
+    reader.onload = function () {
+        callback(reader.result);
+    };
+    reader.readAsDataURL(file);
+}
+
+// Pré-visualizar a imagem carregada
+document.getElementById("photo").addEventListener("change", function (event) {
+    const file = event.target.files[0];
+    if (file) {
+        getBase64(file, function (base64) {
+            // Atualizar a pré-visualização da imagem
+            const preview = document.getElementById("profilePreview");
+            preview.src = base64;
+            preview.style.display = "block";
+        });
+    }
+});
+
 // Função para obter usuários do localStorage
 function getUsers() {
     const users = localStorage.getItem("users");
@@ -14,7 +36,7 @@ document.getElementById("signupForm")?.addEventListener("submit", function (even
     event.preventDefault();
 
     const fullName = document.getElementById("fullName").value;
-    const phone = document.getElementById("phone").value;
+    const photo = document.getElementById("profilePreview").src; // Obter base64 da imagem
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
     const confirmPassword = document.getElementById("confirmPassword").value;
@@ -33,7 +55,7 @@ document.getElementById("signupForm")?.addEventListener("submit", function (even
     }
 
     // Adicionar o novo usuário à lista e salvar no localStorage
-    users.push({ fullName, phone, email, password });
+    users.push({ fullName, photo, email, password });
     saveUsers(users);
 
     alert("Usuário cadastrado com sucesso!");

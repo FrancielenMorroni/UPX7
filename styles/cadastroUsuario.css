@@ -65,3 +65,59 @@ input[type="text"] {
 .rodape {
     margin-top: 120px;
 }
+
+#profilePreview {
+    display: block; 
+    border: 2px solid var(--azul-claro); 
+    border-radius: 100%; 
+    max-width: 150px;
+    max-height: 150px; 
+    object-fit: cover; 
+    margin-bottom: 10px; 
+    margin-left: 26%;
+}
+
+.usuario-input[type="file"] {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#photoLabel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: var(--azul-escuro);
+}
+
+#comeback {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+#imhere {
+    transition: 0.6s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+#imhere:hover {
+    transition: 0.6s;
+    font-weight: bolder;
+    font-size: 22px;
+}
+
+#photo {
+    
+    border: 2px solid var(--azul-escuro);
+    border-radius: 5px;
+    padding: 5px;
+}
