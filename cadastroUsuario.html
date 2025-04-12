@@ -14,13 +14,17 @@
     <main>
         <div class="main-usuario">
             <div class="login-card">
-                <h1>Cadastro</h1>
                 <form id="signupForm">
                     <ul class="usuario">
                         <li class="cadastro-usuario">
                             <label class="usuario-label" id="photoLabel" for="photo">Foto de perfil</label>
                             <img id="profilePreview" src="img/foto-perfil-generica.jpg" alt="Pré-visualização da foto de perfil">
-                            <input class="usuario-input" type="file" id="photo" name="photo" accept="image/*" required>
+                            <!-- Input real escondido -->
+                            <input class="usuario-input-hidden" type="file" id="photo" name="photo" accept="image/*" required>
+                            <!-- Botão customizado -->
+                            <button id="customFileButton" type="button">Selecione uma foto</button>
+                            <!-- Mensagem de arquivo selecionado -->
+                            <span id="fileName">Nenhum arquivo selecionado</span>
                         </li>
                         <li class="cadastro-usuario">
                             <label class="usuario-label" for="fullName">Nome Completo</label>

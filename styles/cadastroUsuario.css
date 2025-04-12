@@ -11,16 +11,17 @@
     justify-content: center;
     align-items: center;
     height: 80vh; 
-    margin: 1.5em;
+    margin: 1.5em; 
 }
 
-.usuario{  
-    width: 100%;
+.usuario{ 
+    width: 150%;
     max-width: 400px;
     padding: 30px;
     justify-content: center; 
     border: 1px solid var(--azul-escuro);
     border-radius: 5px;
+    box-shadow: 12px 12px 24px rgba(0, 0, 0, 0.1), -12px -12px 24px rgba(255, 255, 255, 0.9);
 }
 
 .cadastro-usuario{
@@ -96,6 +97,7 @@ input[type="text"] {
     justify-content: center;
     align-items: center;
     margin-top: 15px;
+    margin-left: 65px;
     font-size: 20px;
 }
 
@@ -115,9 +117,33 @@ input[type="text"] {
     font-size: 22px;
 }
 
-#photo {
-    
+#photo { 
     border: 2px solid var(--azul-escuro);
     border-radius: 5px;
     padding: 5px;
+}
+
+.usuario-input-hidden {
+    display: none; 
+}
+
+#customFileButton {
+    background-color: var(--azul-claro);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#customFileButton:hover {
+    background-color: var(--azul);
+}
+
+#fileName {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
 }
