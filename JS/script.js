@@ -37,7 +37,7 @@ document.getElementById("signupForm")?.addEventListener("submit", function (even
     saveUsers(users);
 
     alert("Usuário cadastrado com sucesso!");
-    window.location.href = "index.html"; // Redirecionar para a tela de login
+    window.location.href = "login.html"; // Redirecionar para a tela de login
 });
 
 // Evento de login
@@ -53,6 +53,7 @@ document.getElementById("loginForm")?.addEventListener("submit", function (event
 
     if (user) {
         alert(`Bem-vindo(a), ${user.fullName}!`);
+        window.location.href = "index.html"; // Redirecionar para página inicial
     } else {
         alert("E-mail ou senha inválidos. Tente novamente.");
     }
