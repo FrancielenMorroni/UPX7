@@ -24,10 +24,9 @@
 }
 
 .login-img{    
-    padding: 1em;
-    width: 130px;
-    height: 100px;
-    margin: auto 7em;
+    height: auto;      
+    display: block;      
+    margin: 0 auto 20px;
 }
 
 .login-titulo{
@@ -106,4 +105,9 @@ input[type="text"] {
 
 .login-google-text{
     align-items: center;
+}
+
+.divider{
+    text-align: center;
+    margin: 0 0 1em;
 }

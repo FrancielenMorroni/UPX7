@@ -9,14 +9,17 @@
 </head>
 <body>
     <header class="header">
-        <a href="index.html"><img src="img/logoCarshare.png" alt="Logo do CarShare" class="logo"> </a>
-        <div class="">
-            <ul>
-                <li>
+        <a href="index.html"><img src="img/logoMaoObra.png" alt="Logo Mãos a Obra" class="logo"> </a>
+        <div class="menu">
+            <ul class="menu-lista">
+                <li class="menu-selecoes">
                     <h3><a href="institucional.html">Institucional</a></h3>
                 </li>
-                <li>
+                <li class="menu-selecoes">
                     <h3><a href="perfilUsuario.html">Meu Perfil</a></h3>
+                </li>
+                <li class="menu-selecoes">
+                    <h3><a href="login.html">Sair</a></h3>
                 </li>
             </ul>
         </div>
@@ -29,21 +32,9 @@
             <div>
                 <ul class="servicos-informacoes">
                     <li class="servicos-lista">
-                        <label class="servicos-label" for="nomeUsuario">Nome</label>
-                        <input class="servicos-input" type="text" id="nome" name="nomeUsuario" placeholder="Nome" required>
-                    </li>  
-                    <li class="servicos-lista">
-                        <label class="servicos-label" for="telefone">Telefone</label>
-                        <input class="servicos-input" type="tel" name="telefone" id="telefone" placeholder="Número de Telefone" pattern="\(\d{2}\) \d{4,5}-\d{4}">
-                    </li>
-                    <li class="servicos-lista">
                         <label class="servicos-label" for="cpfUsuario">CPF</label>
                         <input class="servicos-input" type="text" id="cpfUsuario" placeholder="000.000.000-00" oninput="anyKeyPressed(event)" maxlength="14">
-                    </li> 
-                    <li class="servicos-lista">
-                        <label class="servicos-label" for="dataNascimento">Data de Nascimento</label>
-                        <input class="servicos-input" type="date" name="nomeUsuario" id="dataNascimento" placeholder="Insira a data">
-                    </li>                                 
+                    </li>                            
                     <li class="servicos-lista">
                         <label class="servicos-label" for="tipoServico">Tipo de Serviço</label>
                         <input class="servicos-input" type="text" id="servico" name="tipoServico" placeholder="Tipo de Serviço" required>
@@ -74,7 +65,7 @@
     <footer class="rodape">
         <ul class="rodape-lista">
             <li class="lista-link">
-                <p class="rodape-texto">® 2025.</p>
+                <p class="rodape-texto">® 2025 Mãos A Obra.</p>
             </li>
             <li class="lista-link">
                 <a href="#">Idioma</a>

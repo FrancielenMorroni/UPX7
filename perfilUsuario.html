@@ -9,25 +9,35 @@
 </head>
 <body>
     <header class="header">
-        <a href="index.html"><img src="img/logoCarshare.png" alt="Logo do CarShare" class="logo"> </a>
-        <div class="">
-            <ul>
-                <li>
+        <a href="index.html"><img src="img/logoMaoObra.png" alt="Logo Mãos a Obra" class="logo"> </a>
+        <div class="menu">
+            <ul class="menu-lista">
+                <li class="menu-selecoes">
                     <h3><a href="institucional.html">Institucional</a></h3>
                 </li>
-                <li>
+                <li class="menu-selecoes">
                     <h3><a href="perfilUsuario.html">Meu Perfil</a></h3>
+                </li>
+                <li class="menu-selecoes">
+                    <h3><a href="login.html">Sair</a></h3>
                 </li>
             </ul>
         </div>
     </header>
     <main class="main-usuario">
-        <div class="perfil">
-            <div>
-                <img class="perfil-imagem" src="img/carro.png" alt="">
-            </div>
+        <div class="perfil">           
             <div>
                 <ul class="perfil-informacoes">
+                    <li class="perfil-lista">
+                        <img id="profilePreview" src="img/foto-perfil-generica.jpg" alt="Pré-visualização da foto de perfil">
+                        <label class="usuario-label" id="photoLabel" for="photo">Foto de perfil</label>
+                        <!-- Input real escondido -->
+                        <input class="usuario-input-hidden" type="file" id="photo" name="photo" accept="image/*" required>
+                        <!-- Botão customizado -->
+                        <button id="customFileButton" type="button">Selecione uma foto</button>
+                        <!-- Mensagem de arquivo selecionado -->
+                        <span id="fileName">Nenhum arquivo selecionado</span>
+                    </li>
                     <li class="perfil-lista">
                         <label class="perfil-label" for="loginPerfil">Login</label>
                         <input class="perfil-input" type="email" id="loginPerfil" name="email" placeholder="Email" required>
@@ -89,7 +99,7 @@
     <footer class="rodape">
         <ul class="rodape-lista">
             <li class="lista-link">
-                <p class="rodape-texto">® 2025 .</p>
+                <p class="rodape-texto">® 2025 Mãos A Obra.</p>
             </li>
             <li class="lista-link">
                 <a href="#">Idioma</a>

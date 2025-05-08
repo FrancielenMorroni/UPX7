@@ -16,7 +16,6 @@
 
 .logo {
     padding: 1em;
-    width: 130px;
     height: 100px;  
 }
 
@@ -163,4 +162,19 @@ input[type="date"] {
 .img-pesquisar{
     width: 20px;
     height: 20px;
+}
+
+.menu{
+    text-align: center;
+    padding: 1em 0;
+}
+
+.menu-lista{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu-selecoes{   
+    margin: 1em;
 }
