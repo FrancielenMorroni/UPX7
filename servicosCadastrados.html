@@ -13,13 +13,16 @@
         <div class="menu">
             <ul class="menu-lista">
                 <li class="menu-selecoes">
+                    <h3><a href="index.html">Pagina Inicial</a></h3>
+                </li>
+                <li class="menu-selecoes">
                     <h3><a href="institucional.html">Institucional</a></h3>
                 </li>
                 <li class="menu-selecoes">
                     <h3><a href="perfilUsuario.html">Meu Perfil</a></h3>
                 </li>
                 <li class="menu-selecoes">
-                    <h3><a href="login.html">Sair</a></h3>
+                    <h3><a href="login.html">Login</a></h3>
                 </li>
             </ul>
         </div>
@@ -27,7 +30,20 @@
     <main>
         <div class="servicos">        
             <div>
-                <img class="servicos-imagem" src="" alt="">
+                <li class="perfil-lista">
+                    <img id="profilePreview" src="img/foto-perfil-generica.jpg"
+                        alt="Pré-visualização da foto de perfil">
+                    <label class="usuario-label" id="photoLabel" for="photo">Foto do Anúncio</label>
+                    <!-- Input real escondido -->
+                    <input class="usuario-input-hidden" type="file" id="photo" name="photo" accept="image/*"
+                        required>
+                    <!-- Botão customizado -->
+                    <button id="customFileButton" type="button">Selecione uma foto</button>
+                    <!-- Mensagem de arquivo selecionado -->
+                    <span id="fileName">Nenhum arquivo selecionado</span>
+                </li>
+
+
             </div>
             <div>
                 <ul class="servicos-informacoes">

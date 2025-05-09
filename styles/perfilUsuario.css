@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+   
 }
 
 .perfil{
@@ -9,12 +10,12 @@
     background-color: var(--cor-de-fundo);
     display: flex;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center;    
     margin: 5em;
     border: 1px solid var(--azul-escuro);
     border-radius: 10px;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .perfil-imagem{
@@ -71,6 +72,18 @@ input[type="text"] {
     text-decoration: none
 }
 
-.rodape {
-    margin-top: 10%;
+
+.cadastra-servico{
+    display: flex;
+
 }
+
+.body-perfil{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+

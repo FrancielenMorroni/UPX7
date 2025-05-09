@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
     <header class="header">
         <a href="index.html"><img src="img/logoMaoObra.png" alt="Logo Mãos a Obra" class="logo"> </a>
@@ -15,7 +17,8 @@
                 <form action="#" class="form-pesquisa">
                     <div class="input-filtro">
                         <label class="label-filtro" for="search">Serviço</label>
-                        <input class="input" type="text" id="search" placeholder="Digite para buscar..." autocomplete="on">
+                        <input class="input" type="text" id="search" placeholder="Digite para buscar..."
+                            autocomplete="on">
                         <div id="results"></div>
                     </div>
                     <button class="botao-pesquisar" type="submit" onclick="">
@@ -33,11 +36,11 @@
                     <h3><a href="perfilUsuario.html">Meu Perfil</a></h3>
                 </li>
                 <li class="menu-selecoes">
-                    <h3><a href="login.html">Sair</a></h3>
+                    <h3><a href="login.html">Login</a></h3>
                 </li>
             </ul>
         </div>
-            
+
     </header>
     <main class="main-index">
         <div>
@@ -45,7 +48,8 @@
                 <li>
                     <img src="img/" alt="">
                     <h3>
-                        Confira o perfil dos profissionais disponíveis e encontre um especialista que se encaixe nas suas necessidades ou preferências.
+                        Confira o perfil dos profissionais disponíveis e encontre um especialista que se encaixe nas
+                        suas necessidades ou preferências.
                     </h3>
                 </li>
                 <li>
@@ -57,78 +61,104 @@
                 <li>
                     <img src="img/" alt="">
                     <h3>
-                        Neste contato, tire dúvidas sobre preços, verifique disponibilidade de agenda, e confirmando seu interesse, solicite o atendimento.
+                        Neste contato, tire dúvidas sobre preços, verifique disponibilidade de agenda, e confirmando seu
+                        interesse, solicite o atendimento.
                     </h3>
                 </li>
                 <li>
                     <img src="img/" alt="">
                     <h3>
-                        Após o serviço você poderá deixar sua opinião sobre. Tudo isso de forma gratuita, simples e rápida.
+                        Após o serviço você poderá deixar sua opinião sobre. Tudo isso de forma gratuita, simples e
+                        rápida.
                     </h3>
                 </li>
             </ul>
         </div>
-                
+
         <div>
             <ul class="lista">
-                <li class="lista-carros">
-                    <img class="carros-imagem" src="" alt="">
-                    </a>
-                    <a class="carros-descricao" href=""><b class="carros-descricao-negrito"></b><br></a>
+                <li class="lista-servicos">
+                    <ul>
+                        <img class="servicos-imagem" src="" alt="">
+                        <li class="servicos-lista">
+                            <label class="servicos-label" for="descricaoServico">Descrição do Serviço</label>
+                            <input class="servicos-input" type="text" id="descricao" name="descricaoServico"
+                                placeholder="Descrição do Serviço" required>
+                        </li>
+                        <li class="perfil-lista">
+                            <label class="perfil-label" for="telefone">Telefone</label>
+                            <input class="perfil-input" type="tel" name="telefone" id="telefone"
+                                placeholder="Número de Telefone" pattern="\(\d{2}\) \d{4,5}-\d{4}">
+                        </li>
+                        <li class="servicos-lista">
+                            <label class="servicos-label" for="instagram">Instagram</label>
+                            <input class="servicos-input" type="text" id="instagram" name="instagram"
+                                placeholder="Instagram">
+                        </li>
+                        <li class="servicos-lista">
+                            <label class="servicos-label" for="facebook">Facebook</label>
+                            <input class="servicos-input" type="text" id="facebook" name="facebook"
+                                placeholder="Facebook">
+                        </li>
+                        <li class="servicos-lista">
+                            <label class="servicos-label" for="tiktok">TikTok</label>
+                            <input class="servicos-input" type="text" id="tiktok" name="tiktok" placeholder="TikTok">
+                        </li>
+                    </ul>
                 </li>
-                <li class="lista-carros">
-                    <img class="carros-imagem" src="" alt="">
+                <li class="lista-servicos">
+                    <img class="servicos-imagem" src="" alt="">
                     </a>
-                    <a class="carros-descricao" href=""><b class="carros-descricao-negrito"></b><br></a>
+                    <a class="servicos-descricao" href="">Descrição</a>
                 </li>
-                <li class="lista-carros">
-                    <img class="carros-imagem" src="" alt="">
+                <li class="lista-servicos">
+                    <img class="servicos-imagem" src="" alt="">
                     </a>
-                    <a class="carros-descricao" href=""><b class="carros-descricao-negrito"></b><br></a>
+                    <a class="servicos-descricao" href="">Descrição</a>
                 </li>
             </ul>
         </div>
         <div>
             <ul class="lista">
-                <li class="lista-carros">
-                    <img class="carros-imagem" src="" alt="">
+                <li class="lista-servicos">
+                    <img class="servicos-imagem" src="" alt="">
                     </a>
-                    <a class="carros-descricao" href=""><b class="carros-descricao-negrito"></b><br></a>
+                    <a class="servicos-descricao" href="">Descrição</a>
                 </li>
-                <li class="lista-carros">
-                    <img class="carros-imagem" src="" alt="">
+                <li class="lista-servicos">
+                    <img class="servicos-imagem" src="" alt="">
                     </a>
-                    <a class="carros-descricao" href=""><b class="carros-descricao-negrito"></b><br></a>
+                    <a class="servicos-descricao" href="">Descrição</a>
                 </li>
-                <li class="lista-carros">
-                    <img class="carros-imagem" src="" alt="">
+                <li class="lista-servicos">
+                    <img class="servicos-imagem" src="" alt="">
                     </a>
-                    <a class="carros-descricao" href=""><b class="carros-descricao-negrito"></b><br></a>
+                    <a class="servicos-descricao" href="">Descrição</a>
                 </li>
             </ul>
         </div>
         <div>
             <ul class="lista">
-                <li class="lista-carros">
-                    <img class="carros-imagem" src="" alt="">
+                <li class="lista-servicos">
+                    <img class="servicos-imagem" src="" alt="">
                     </a>
-                    <a class="carros-descricao" href=""><b class="carros-descricao-negrito"></b><br></a>
+                    <a class="servicos-descricao" href="">Descrição</a>
                 </li>
-                <li class="lista-carros">
-                    <img class="carros-imagem" src="" alt="">
+                <li class="lista-servicos">
+                    <img class="servicos-imagem" src="" alt="">
                     </a>
-                    <a class="carros-descricao" href=""><b class="carros-descricao-negrito"></b><br></a>
+                    <a class="servicos-descricao" href="">Descrição</a>
                 </li>
-                <li class="lista-carros">
-                    <img class="carros-imagem" src="" alt="">
+                <li class="lista-servicos">
+                    <img class="servicos-imagem" src="" alt="">
                     </a>
-                    <a class="carros-descricao" href=""><b class="carros-descricao-negrito"></b><br></a>
+                    <a class="servicos-descricao" href="">Descrição</a>
                 </li>
             </ul>
         </div>
     </main>
     <footer class="rodape">
-       <ul class="rodape-lista">
+        <ul class="rodape-lista">
             <li class="lista-link">
                 <p class="rodape-texto">® 2025 Mãos A Obra.</p>
             </li>
@@ -151,4 +181,5 @@
     </footer>
     <script src="./JS/search.js"></script>
 </body>
+
 </html>
