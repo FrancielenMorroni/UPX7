@@ -19,6 +19,11 @@
     height: 100px;  
 }
 
+.logo-img{
+    padding: 1em;
+    height: 100px;   
+}
+
 .titulo_veiculo{
     margin: auto;
     display: flex;
