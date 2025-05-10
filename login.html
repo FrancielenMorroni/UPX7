@@ -1,3 +1,4 @@
+html
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -15,33 +16,29 @@
         <div class="login">
             <img src="img/logoMaoObra.png" alt="Logo Mãos a Obra" class="login-img">
             <div class="login-titulo">Login</div>
-            <form action="#" method="post" class="login-form">
+            <form id="loginForm" class="login-form">
                 <div class="login-div">
                     <ul>
                         <li class="login-filtro">
                             <label class="login-label" for="email">Email:</label>
-                            <input class="login-input" type="email" id="email" name="email" placeholder="Email" required>
+                            <input class="login-input" type="email" id="email" name="email" placeholder="Email"
+                                required>
                         </li>
                         <li class="login-filtro">
-                            <label class="login-label" for="senha">Senha:</label>
-                            <input class="login-input" type="password" id="senha" name="password"
+                            <label class="login-label" for="password">Senha:</label>
+                            <input class="login-input" type="password" id="password" name="password"
                                 placeholder="Digite sua senha" required>
                         </li>
                     </ul>
                 </div>
-                <button class="login-botao" id="entrar" type="button">
-                    <a href="index.html">Entrar</a>
-                </button>
+                <button class="login-botao" id="entrar" type="submit">Entrar</button>
             </form>
             <div class="divider">ou</div>
             <div id="g_id_onload"
                 data-client_id="701543685136-h1r4mgerovgn1im7b9i3gob4lej1fdu9.apps.googleusercontent.com"
-                data-context="signin"
-                data-ux_mode="popup"
-                data-callback="handleGoogleSignIn"
-                data-auto_prompt="false">
-       </div>
-       <div class="g_id_signin" data-type="standard"></div>
+                data-context="signin" data-ux_mode="popup" data-callback="handleGoogleSignIn" data-auto_prompt="false">
+            </div>
+            <div class="g_id_signin" data-type="standard"></div>
             <p class="login-cadastro">Não tem uma conta? <a href="cadastroUsuario.html">Cadastre-se</a></p>
         </div>
     </main>
@@ -67,7 +64,6 @@
             </li>
         </ul>
     </footer>
-    <!-- Script corrigido com a referência ao arquivo na pasta correta -->
     <script src="JS/script.js"></script>
 </body>
 

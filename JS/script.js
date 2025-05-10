@@ -1,4 +1,58 @@
-// Função para converter a imagem em Base64
+TODO: CPF VALIDATO ON SIGNUP
+TODO: SAVE SOME USERS WITH FOTOS AND ACTIVETES FOR SIMULATION OF CURRRENT USERS
+// Função para obter usuários do localStorage
+function getUsers() {
+    const users = localStorage.getItem("users");
+    return users ? JSON.parse(users) : [];
+}
+
+// Função para salvar usuários no localStorage
+function saveUsers(users) {
+    localStorage.setItem("users", JSON.stringify(users));
+}
+
+// Função para criar usuários predefinidos no localStorage
+function initializeDefaultUsers() {
+    const defaultUsers = [
+        {
+            fullName: "João Silva",
+            photo: "https://via.placeholder.com/150", // COLOCAR CAMINHO DA FOTO E SALVAR NA PASTA IMG
+            email: "joao.silva@example.com",
+            password: "123456",
+        },
+        {
+            fullName: "Maria Oliveira",
+            photo: "https://via.placeholder.com/150", // URL para a foto
+            email: "maria.oliveira@example.com",
+            password: "654321",
+        },
+        {
+            fullName: "Ana Souza",
+            photo: "https://via.placeholder.com/150", // URL para a foto
+            email: "ana.souza@example.com",
+            password: "senha123",
+        },
+    ];
+
+    // Carregar usuários existentes e evitar duplicatas
+    const users = getUsers();
+    defaultUsers.forEach((defaultUser) => {
+        if (!users.some((user) => user.email === defaultUser.email)) {
+            users.push(defaultUser);
+        }
+    });
+
+    saveUsers(users);
+}
+
+// Inicializar usuários predefinidos ao carregar o script
+initializeDefaultUsers();
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
 function getBase64(file, callback) {
     const reader = new FileReader();
     reader.onload = function () {
@@ -7,12 +61,11 @@ function getBase64(file, callback) {
     reader.readAsDataURL(file);
 }
 
-// Pré-visualizar a imagem carregada
+// Pre-load image
 document.getElementById("photo").addEventListener("change", function (event) {
     const file = event.target.files[0];
     if (file) {
         getBase64(file, function (base64) {
-            // Atualizar a pré-visualização da imagem
             const preview = document.getElementById("profilePreview");
             preview.src = base64;
             preview.style.display = "block";
@@ -20,7 +73,7 @@ document.getElementById("photo").addEventListener("change", function (event) {
     }
 });
 
-// Função para obter usuários do localStorage
+// Get localStorage
 function getUsers() {
     const users = localStorage.getItem("users");
     return users ? JSON.parse(users) : [];
