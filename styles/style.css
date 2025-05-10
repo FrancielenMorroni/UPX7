@@ -2,7 +2,6 @@
 @import url("header.css");
 @import url("paginaInicial.css");
 @import url("cadastroUsuario.css");
-@import url("cadastroVeiculo.css");
 @import url("servicosCadastrados.css");
 @import url("perfilUsuario.css");
 @import url("rodape.css");
@@ -32,3 +31,39 @@ body {
     font-weight: 400;  
 }
 
+.user-block {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px 0;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-block h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.servicos-informacoes {
+    list-style: none;
+    padding: 0;
+}
+
+.servicos-informacoes li {
+    margin-bottom: 12px;
+}
+
+.servicos-input,
+.perfil-input {
+    display: inline-block;
+    padding: 8px;
+    font-size: 14px;
+    color: #555;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: not-allowed;
+    text-align: center;
+}
