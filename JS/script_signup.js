@@ -14,7 +14,7 @@ function initializeDefaultUsers() {
     const defaultUsers = [
         {
             fullName: "João Silva",
-            photo: "img/Perfis/1.png", // COLOCAR CAMINHO DA FOTO E SALVAR NA PASTA IMG
+            photo: "img/Perfis/1.png", // URL para a foto
             email: "joao.silva@example.com",
             password: "123456",
         },
@@ -32,7 +32,6 @@ function initializeDefaultUsers() {
         },
     ];
 
-    // Carregar usuários existentes e evitar duplicatas
     const users = getUsers();
     defaultUsers.forEach((defaultUser) => {
         if (!users.some((user) => user.email === defaultUser.email)) {
@@ -46,11 +45,7 @@ function initializeDefaultUsers() {
 // Inicializar usuários predefinidos ao carregar o script
 initializeDefaultUsers();
 
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
+// Função para converter arquivo em base64
 function getBase64(file, callback) {
     const reader = new FileReader();
     reader.onload = function () {
@@ -59,8 +54,8 @@ function getBase64(file, callback) {
     reader.readAsDataURL(file);
 }
 
-// Pre-load image
-document.getElementById("photo").addEventListener("change", function (event) {
+// Pre-carregar imagem
+document.getElementById("photo")?.addEventListener("change", function (event) {
     const file = event.target.files[0];
     if (file) {
         getBase64(file, function (base64) {
@@ -71,18 +66,7 @@ document.getElementById("photo").addEventListener("change", function (event) {
     }
 });
 
-// Get localStorage
-function getUsers() {
-    const users = localStorage.getItem("users");
-    return users ? JSON.parse(users) : [];
-}
-
-
-function saveUsers(users) {
-    localStorage.setItem("users", JSON.stringify(users));
-}
-
-// Signup
+// Cadastro de usuário
 document.getElementById("signupForm")?.addEventListener("submit", function (event) {
     event.preventDefault();
 

@@ -1,3 +1,7 @@
+// Carregar usuários
+let usuarios = JSON.parse(localStorage.getItem('users')) || [];
+console.log('Usuários carregados do localStorage:', usuarios);
+
 // Função para verificar se o usuário está logado
 function getLoggedInUser() {
     const loggedInUser = localStorage.getItem("loggedInUser");
@@ -14,7 +18,7 @@ function saveUserAdditionalInfo(cpf, telefone, instagram, facebook, tiktok) {
         return;
     }
 
-    const users = getUsers();
+    const users = JSON.parse(localStorage.getItem("users")) || [];
     const user = users.find(user => user.email === loggedInUser.email);
 
     if (user) {
@@ -23,7 +27,8 @@ function saveUserAdditionalInfo(cpf, telefone, instagram, facebook, tiktok) {
         user.instagram = instagram;
         user.facebook = facebook;
         user.tiktok = tiktok;
-        saveUsers(users);
+
+        localStorage.setItem("users", JSON.stringify(users));
         alert("Informações salvas com sucesso!");
     } else {
         console.error("Erro ao encontrar o usuário logado no array de usuários.");
@@ -41,7 +46,7 @@ function saveUserService(tipoServico, descricaoServico) {
         return;
     }
 
-    const users = getUsers();
+    const users = JSON.parse(localStorage.getItem("users")) || [];
     const user = users.find(user => user.email === loggedInUser.email);
 
     if (user) {
@@ -49,7 +54,8 @@ function saveUserService(tipoServico, descricaoServico) {
             user.servicos = [];
         }
         user.servicos.push({ tipo: tipoServico, descricao: descricaoServico });
-        saveUsers(users);
+
+        localStorage.setItem("users", JSON.stringify(users));
         alert("Serviço cadastrado com sucesso!");
     } else {
         console.error("Erro ao encontrar o usuário logado no array de usuários.");
@@ -106,15 +112,4 @@ function updateUserNameField() {
     } else {
         console.error("Campo 'nome' não encontrado no DOM.");
     }
-}
-
-// Função para obter usuários do localStorage
-function getUsers() {
-    const users = localStorage.getItem("users");
-    return users ? JSON.parse(users) : [];
-}
-
-// Função para salvar usuários no localStorage
-function saveUsers(users) {
-    localStorage.setItem("users", JSON.stringify(users));
 }
