@@ -9,13 +9,13 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
-<body>
+<body >
     <header class="header">
         <a href="index.html"><img src="img/logoMaoObra.png" alt="Logo Mãos a Obra" class="logo"> </a>
         <div class="menu">
             <ul class="menu-lista">
                 <li class="menu-selecoes">
-                    <h3><a href="index.html">Página Inicial</a></h3>
+                    <h3><a href="index.html">Pagina Inicial</a></h3>
                 </li>
                 <li class="menu-selecoes">
                     <h3><a href="institucional.html">Institucional</a></h3>
@@ -39,19 +39,28 @@
                                 alt="Pré-visualização da foto de perfil">
                             <label class="usuario-label" id="photoLabel" for="photo">Foto de perfil</label>
                             <!-- Input real escondido -->
-                            <input class="usuario-input-hidden" type="file" id="photo" name="photo" accept="image/*">
+                            <input class="usuario-input-hidden" type="file" id="photo" name="photo" accept="image/*"
+                                required>
                             <!-- Botão customizado -->
                             <button id="customFileButton" type="button">Selecione uma foto</button>
+                            <!-- Mensagem de arquivo selecionado -->
+                            <span id="fileName">Nenhum arquivo selecionado</span>
+                        </li>
+                        <li class="perfil-lista">
+                            <label class="perfil-label" for="loginPerfil">Login</label>
+                            <input class="perfil-input" type="email" id="loginPerfil" name="email" placeholder="Email"
+                                required>
+                            <button class="perfil-botao">Alterar Senha</button>
                         </li>
                         <li class="perfil-lista">
                             <label class="perfil-label" for="nomeUsuario">Nome</label>
                             <input class="perfil-input" type="text" id="nome" name="nomeUsuario" placeholder="Nome"
                                 required>
                         </li>
-                        <li class="servicos-lista">
-                            <label class="servicos-label" for="cpfUsuario">CPF</label>
-                            <input class="servicos-input" type="text" id="cpfUsuario" placeholder="000.000.000-00"
-                                oninput="anyKeyPressed(event)" maxlength="14">
+                        <li class="perfil-lista">
+                            <label class="perfil-label" for="dataNascimento">Data de Nascimento</label>
+                            <input class="perfil-input" type="date" name="nomeUsuario" id="dataNascimento"
+                                placeholder="Insira a data">
                         </li>
                         <li class="perfil-lista">
                             <label class="perfil-label" for="telefone">Telefone</label>
@@ -60,29 +69,33 @@
                         </li>
                         <li class="servicos-lista">
                             <label class="servicos-label" for="instagram">Instagram</label>
-                            <input class="servicos-input" type="text" id="instagram" name="instagram"
-                                placeholder="Instagram">
-                        </li>
+                            <input class="servicos-input" type="text" id="instagram" name="instagram" placeholder="Instagram">
+                        </li> 
                         <li class="servicos-lista">
                             <label class="servicos-label" for="facebook">Facebook</label>
-                            <input class="servicos-input" type="text" id="facebook" name="facebook"
-                                placeholder="Facebook">
-                        </li>
+                            <input class="servicos-input" type="text" id="facebook" name="facebook" placeholder="Facebook">
+                        </li> 
                         <li class="servicos-lista">
                             <label class="servicos-label" for="tiktok">TikTok</label>
                             <input class="servicos-input" type="text" id="tiktok" name="tiktok" placeholder="TikTok">
-                        </li>
+                        </li> 
                         <li class="perfil-lista">
-                            <button class="perfil-botao" type="button">Salvar Alterações</button>
+                            <button class="perfil-botao" type="submit">Salvar Alterações</button>
                         </li>
                     </ul>
                 </div>
             </div>
             <div class="cadastra-servico">
-                <button class="perfil-botao" type="button"><a href="servicosCadastrados.html">Meus Serviços</a></button>
+                <button class="perfil-botao" type="submit"><a href="servicosCadastrados.html">Cadastrar
+                        Serviço</a></button>
             </div>
             <div class="servico-cadastrado">
                 <ul>
+                    <li class="servicos-lista">
+                        <label class="servicos-label" for="cpfUsuario">CPF</label>
+                        <input class="servicos-input" type="text" id="cpfUsuario" placeholder="000.000.000-00"
+                            oninput="anyKeyPressed(event)" maxlength="14">
+                    </li>
                     <li class="servicos-lista">
                         <label class="servicos-label" for="tipoServico">Tipo de Serviço</label>
                         <input class="servicos-input" type="text" id="servico" name="tipoServico"
@@ -94,16 +107,28 @@
                             placeholder="Descrição do Serviço" required>
                     </li>
                     <li class="servicos-lista">
-                        <button class="servicos-botao" type="button">Cadastrar Serviço</button>
+                        <label class="servicos-label" for="instagram">Instagram</label>
+                        <input class="servicos-input" type="text" id="instagram" name="instagram"
+                            placeholder="Instagram">
+                    </li>
+                    <li class="servicos-lista">
+                        <label class="servicos-label" for="facebook">Facebook</label>
+                        <input class="servicos-input" type="text" id="facebook" name="facebook" placeholder="Facebook">
+                    </li>
+                    <li class="servicos-lista">
+                        <label class="servicos-label" for="tiktok">TikTok</label>
+                        <input class="servicos-input" type="text" id="tiktok" name="tiktok" placeholder="TikTok">
+                    </li>
+                    <li class="servicos-lista">
+                        <button class="servicos-botao" type="submit">Editar</button>
                     </li>
                 </ul>
             </div>
-        </div>
     </main>
     <footer class="rodape">
         <ul class="rodape-lista">
             <li class="lista-link">
-                <p class="rodape-texto">® 2025 Mãos a Obra.</p>
+                <p class="rodape-texto">® 2025 Mãos A Obra.</p>
             </li>
             <li class="lista-link">
                 <a href="#">Idioma</a>
@@ -122,7 +147,7 @@
             </li>
         </ul>
     </footer>
-    <script src="JS/script_services.js"></script>
+    </div>
 </body>
 
 </html>
