@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +7,6 @@
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
-
 <body>
     <header class="header">
         <a href="index.html"><img src="img/logoMaoObra.png" alt="Logo Mãos a Obra" class="logo"> </a>
@@ -45,11 +43,11 @@
                 <ul class="servicos-informacoes">
                     <li class="servicos-lista">
                         <label class="servicos-label" for="tipoServico">Tipo de Serviço</label>
-                        <span class="servicos-text" id="servico">Tipo de Serviço Aqui</span>
+                        <input class="servicos-input" type="text" id="servico" name="tipoServico" placeholder="Tipo de Serviço" required>
                     </li>
                     <li class="servicos-lista">
                         <label class="servicos-label" for="descricaoServico">Descrição do Serviço</label>
-                        <span class="servicos-text" id="descricao">Descrição do Serviço Aqui</span>
+                        <input class="servicos-input" type="text" id="descricao" name="descricaoServico" placeholder="Descrição do Serviço" required>
                     </li>
                 </ul>
             </div>
@@ -77,7 +75,6 @@
             </li>
         </ul>
     </footer>
-    <script src="JS/load_services.js"></script>
+    <script src="servicos.js"></script>
 </body>
-
 </html>
