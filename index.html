@@ -17,10 +17,11 @@
                 <form action="#" class="form-pesquisa">
                     <div class="input-filtro">
                         <label class="label-filtro" for="search">Serviço</label>
-                        <input class="input" type="text" id="search" placeholder="Digite para buscar..." autocomplete="on">
+                        <input class="input" type="text" id="search" placeholder="Digite para buscar..."
+                            autocomplete="on">
                         <div id="results"></div>
                     </div>
-                    <button class="botao-pesquisar" type="submit">
+                    <button class="botao-pesquisar" type="submit" onclick="">
                         <img class="img-pesquisar" src="img/lupa.png" alt="Buscar">
                     </button>
                 </form>
@@ -42,7 +43,311 @@
 
     </header>
     <main class="main-index">
-        <!-- Dinamicamente gerado pelo script -->
+        <div>
+            <ul class="lista">
+                <li>
+                    <img src="img/" alt="">
+                    <h3>
+                        Confira o perfil dos profissionais disponíveis e encontre um especialista que se encaixe nas
+                        suas necessidades ou preferências.
+                    </h3>
+                </li>
+                <li>
+                    <img src="img/" alt="">
+                    <h3>
+                        e envie uma mensagem diretamente para o profissional.
+                    </h3>
+                </li>
+                <li>
+                    <img src="img/" alt="">
+                    <h3>
+                        Neste contato, tire dúvidas sobre preços, verifique disponibilidade de agenda, e confirmando seu
+                        interesse, solicite o atendimento.
+                    </h3>
+                </li>
+                <li>
+                    <img src="img/" alt="">
+                    <h3>
+                        Após o serviço você poderá deixar sua opinião sobre. Tudo isso de forma gratuita, simples e
+                        rápida.
+                    </h3>
+                </li>
+            </ul>
+        </div>
+
+        <div>
+            <ul class="lista">
+                <li class="lista-servicos">
+                    <ul>
+                        <img class="servicos-imagem" src="" alt="">
+                        <li class="servicos-lista">
+                            <label class="servicos-label" for="descricaoServico">Descrição do Serviço</label>
+                            <input class="servicos-input" type="text" id="descricao" name="descricaoServico"
+                                placeholder="Descrição do Serviço" required>
+                        </li>
+                        <li class="perfil-lista">
+                            <label class="perfil-label" for="telefone">Telefone</label>
+                            <input class="perfil-input" type="tel" name="telefone" id="telefone"
+                                placeholder="Número de Telefone" pattern="\(\d{2}\) \d{4,5}-\d{4}">
+                        </li>
+                        <li class="servicos-lista">
+                            <label class="servicos-label" for="instagram">Instagram</label>
+                            <input class="servicos-input" type="text" id="instagram" name="instagram"
+                                placeholder="Instagram">
+                        </li>
+                        <li class="servicos-lista">
+                            <label class="servicos-label" for="facebook">Facebook</label>
+                            <input class="servicos-input" type="text" id="facebook" name="facebook"
+                                placeholder="Facebook">
+                        </li>
+                        <li class="servicos-lista">
+                            <label class="servicos-label" for="tiktok">TikTok</label>
+                            <input class="servicos-input" type="text" id="tiktok" name="tiktok" placeholder="TikTok">
+                        </li>
+                    </ul>
+                </li>
+                <li class="lista-servicos">
+                    <ul>
+                        <img class="servicos-imagem" src="" alt="">
+                        <li class="servicos-lista">
+                            <label class="servicos-label" for="descricaoServico">Descrição do Serviço</label>
+                            <input class="servicos-input" type="text" id="descricao" name="descricaoServico"
+                                placeholder="Descrição do Serviço" required>
+                        </li>
+                        <li class="perfil-lista">
+                            <label class="perfil-label" for="telefone">Telefone</label>
+                            <input class="perfil-input" type="tel" name="telefone" id="telefone"
+                                placeholder="Número de Telefone" pattern="\(\d{2}\) \d{4,5}-\d{4}">
+                        </li>
+                        <li class="servicos-lista">
+                            <label class="servicos-label" for="instagram">Instagram</label>
+                            <input class="servicos-input" type="text" id="instagram" name="instagram"
+                                placeholder="Instagram">
+                        </li>
+                        <li class="servicos-lista">
+                            <label class="servicos-label" for="facebook">Facebook</label>
+                            <input class="servicos-input" type="text" id="facebook" name="facebook"
+                                placeholder="Facebook">
+                        </li>
+                        <li class="servicos-lista">
+                            <label class="servicos-label" for="tiktok">TikTok</label>
+                            <input class="servicos-input" type="text" id="tiktok" name="tiktok" placeholder="TikTok">
+                        </li>
+                    </ul>
+                </li>
+                <li class="lista-servicos">
+                    <ul>
+                        <img class="servicos-imagem" src="" alt="">
+                        <li class="servicos-lista">
+                            <label class="servicos-label" for="descricaoServico">Descrição do Serviço</label>
+                            <input class="servicos-input" type="text" id="descricao" name="descricaoServico"
+                                placeholder="Descrição do Serviço" required>
+                        </li>
+                        <li class="perfil-lista">
+                            <label class="perfil-label" for="telefone">Telefone</label>
+                            <input class="perfil-input" type="tel" name="telefone" id="telefone"
+                                placeholder="Número de Telefone" pattern="\(\d{2}\) \d{4,5}-\d{4}">
+                        </li>
+                        <li class="servicos-lista">
+                            <label class="servicos-label" for="instagram">Instagram</label>
+                            <input class="servicos-input" type="text" id="instagram" name="instagram"
+                                placeholder="Instagram">
+                        </li>
+                        <li class="servicos-lista">
+                            <label class="servicos-label" for="facebook">Facebook</label>
+                            <input class="servicos-input" type="text" id="facebook" name="facebook"
+                                placeholder="Facebook">
+                        </li>
+                        <li class="servicos-lista">
+                            <label class="servicos-label" for="tiktok">TikTok</label>
+                            <input class="servicos-input" type="text" id="tiktok" name="tiktok" placeholder="TikTok">
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul class="lista">
+                <li class="lista-servicos">
+                    <ul>
+                        <img class="servicos-imagem" src="" alt="">
+                        <li class="servicos-lista">
+                            <label class="servicos-label" for="descricaoServico">Descrição do Serviço</label>
+                            <input class="servicos-input" type="text" id="descricao" name="descricaoServico"
+                                placeholder="Descrição do Serviço" required>
+                        </li>
+                        <li class="perfil-lista">
+                            <label class="perfil-label" for="telefone">Telefone</label>
+                            <input class="perfil-input" type="tel" name="telefone" id="telefone"
+                                placeholder="Número de Telefone" pattern="\(\d{2}\) \d{4,5}-\d{4}">
+                        </li>
+                        <li class="servicos-lista">
+                            <label class="servicos-label" for="instagram">Instagram</label>
+                            <input class="servicos-input" type="text" id="instagram" name="instagram"
+                                placeholder="Instagram">
+                        </li>
+                        <li class="servicos-lista">
+                            <label class="servicos-label" for="facebook">Facebook</label>
+                            <input class="servicos-input" type="text" id="facebook" name="facebook"
+                                placeholder="Facebook">
+                        </li>
+                        <li class="servicos-lista">
+                            <label class="servicos-label" for="tiktok">TikTok</label>
+                            <input class="servicos-input" type="text" id="tiktok" name="tiktok" placeholder="TikTok">
+                        </li>
+                    </ul>
+                </li>
+                <li class="lista-servicos">
+                    <ul>
+                        <img class="servicos-imagem" src="" alt="">
+                        <li class="servicos-lista">
+                            <label class="servicos-label" for="descricaoServico">Descrição do Serviço</label>
+                            <input class="servicos-input" type="text" id="descricao" name="descricaoServico"
+                                placeholder="Descrição do Serviço" required>
+                        </li>
+                        <li class="perfil-lista">
+                            <label class="perfil-label" for="telefone">Telefone</label>
+                            <input class="perfil-input" type="tel" name="telefone" id="telefone"
+                                placeholder="Número de Telefone" pattern="\(\d{2}\) \d{4,5}-\d{4}">
+                        </li>
+                        <li class="servicos-lista">
+                            <label class="servicos-label" for="instagram">Instagram</label>
+                            <input class="servicos-input" type="text" id="instagram" name="instagram"
+                                placeholder="Instagram">
+                        </li>
+                        <li class="servicos-lista">
+                            <label class="servicos-label" for="facebook">Facebook</label>
+                            <input class="servicos-input" type="text" id="facebook" name="facebook"
+                                placeholder="Facebook">
+                        </li>
+                        <li class="servicos-lista">
+                            <label class="servicos-label" for="tiktok">TikTok</label>
+                            <input class="servicos-input" type="text" id="tiktok" name="tiktok" placeholder="TikTok">
+                        </li>
+                    </ul>
+                </li>
+                <li class="lista-servicos">
+                    <ul>
+                        <img class="servicos-imagem" src="" alt="">
+                        <li class="servicos-lista">
+                            <label class="servicos-label" for="descricaoServico">Descrição do Serviço</label>
+                            <input class="servicos-input" type="text" id="descricao" name="descricaoServico"
+                                placeholder="Descrição do Serviço" required>
+                        </li>
+                        <li class="perfil-lista">
+                            <label class="perfil-label" for="telefone">Telefone</label>
+                            <input class="perfil-input" type="tel" name="telefone" id="telefone"
+                                placeholder="Número de Telefone" pattern="\(\d{2}\) \d{4,5}-\d{4}">
+                        </li>
+                        <li class="servicos-lista">
+                            <label class="servicos-label" for="instagram">Instagram</label>
+                            <input class="servicos-input" type="text" id="instagram" name="instagram"
+                                placeholder="Instagram">
+                        </li>
+                        <li class="servicos-lista">
+                            <label class="servicos-label" for="facebook">Facebook</label>
+                            <input class="servicos-input" type="text" id="facebook" name="facebook"
+                                placeholder="Facebook">
+                        </li>
+                        <li class="servicos-lista">
+                            <label class="servicos-label" for="tiktok">TikTok</label>
+                            <input class="servicos-input" type="text" id="tiktok" name="tiktok" placeholder="TikTok">
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul class="lista">
+                <li class="lista-servicos">
+                    <ul>
+                        <img class="servicos-imagem" src="" alt="">
+                        <li class="servicos-lista">
+                            <label class="servicos-label" for="descricaoServico">Descrição do Serviço</label>
+                            <input class="servicos-input" type="text" id="descricao" name="descricaoServico"
+                                placeholder="Descrição do Serviço" required>
+                        </li>
+                        <li class="perfil-lista">
+                            <label class="perfil-label" for="telefone">Telefone</label>
+                            <input class="perfil-input" type="tel" name="telefone" id="telefone"
+                                placeholder="Número de Telefone" pattern="\(\d{2}\) \d{4,5}-\d{4}">
+                        </li>
+                        <li class="servicos-lista">
+                            <label class="servicos-label" for="instagram">Instagram</label>
+                            <input class="servicos-input" type="text" id="instagram" name="instagram"
+                                placeholder="Instagram">
+                        </li>
+                        <li class="servicos-lista">
+                            <label class="servicos-label" for="facebook">Facebook</label>
+                            <input class="servicos-input" type="text" id="facebook" name="facebook"
+                                placeholder="Facebook">
+                        </li>
+                        <li class="servicos-lista">
+                            <label class="servicos-label" for="tiktok">TikTok</label>
+                            <input class="servicos-input" type="text" id="tiktok" name="tiktok" placeholder="TikTok">
+                        </li>
+                    </ul>
+                </li>
+                <li class="lista-servicos">
+                    <ul>
+                        <img class="servicos-imagem" src="" alt="">
+                        <li class="servicos-lista">
+                            <label class="servicos-label" for="descricaoServico">Descrição do Serviço</label>
+                            <input class="servicos-input" type="text" id="descricao" name="descricaoServico"
+                                placeholder="Descrição do Serviço" required>
+                        </li>
+                        <li class="perfil-lista">
+                            <label class="perfil-label" for="telefone">Telefone</label>
+                            <input class="perfil-input" type="tel" name="telefone" id="telefone"
+                                placeholder="Número de Telefone" pattern="\(\d{2}\) \d{4,5}-\d{4}">
+                        </li>
+                        <li class="servicos-lista">
+                            <label class="servicos-label" for="instagram">Instagram</label>
+                            <input class="servicos-input" type="text" id="instagram" name="instagram"
+                                placeholder="Instagram">
+                        </li>
+                        <li class="servicos-lista">
+                            <label class="servicos-label" for="facebook">Facebook</label>
+                            <input class="servicos-input" type="text" id="facebook" name="facebook"
+                                placeholder="Facebook">
+                        </li>
+                        <li class="servicos-lista">
+                            <label class="servicos-label" for="tiktok">TikTok</label>
+                            <input class="servicos-input" type="text" id="tiktok" name="tiktok" placeholder="TikTok">
+                        </li>
+                    </ul>
+                </li>
+                <li class="lista-servicos">
+                    <ul>
+                        <img class="servicos-imagem" src="" alt="">
+                        <li class="servicos-lista">
+                            <label class="servicos-label" for="descricaoServico">Descrição do Serviço</label>
+                            <input class="servicos-input" type="text" id="descricao" name="descricaoServico"
+                                placeholder="Descrição do Serviço" required>
+                        </li>
+                        <li class="perfil-lista">
+                            <label class="perfil-label" for="telefone">Telefone</label>
+                            <input class="perfil-input" type="tel" name="telefone" id="telefone"
+                                placeholder="Número de Telefone" pattern="\(\d{2}\) \d{4,5}-\d{4}">
+                        </li>
+                        <li class="servicos-lista">
+                            <label class="servicos-label" for="instagram">Instagram</label>
+                            <input class="servicos-input" type="text" id="instagram" name="instagram"
+                                placeholder="Instagram">
+                        </li>
+                        <li class="servicos-lista">
+                            <label class="servicos-label" for="facebook">Facebook</label>
+                            <input class="servicos-input" type="text" id="facebook" name="facebook"
+                                placeholder="Facebook">
+                        </li>
+                        <li class="servicos-lista">
+                            <label class="servicos-label" for="tiktok">TikTok</label>
+                            <input class="servicos-input" type="text" id="tiktok" name="tiktok" placeholder="TikTok">
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
     </main>
     <footer class="rodape">
         <ul class="rodape-lista">
@@ -66,7 +371,7 @@
             </li>
         </ul>
     </footer>
-    <script src="./JS/script_index.js"></script>
+    <script src="./JS/search.js"></script>
 </body>
 
 </html>
