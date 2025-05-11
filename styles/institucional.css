@@ -37,12 +37,13 @@
 .titulo{
     text-align: center;
     font-weight: bold;
+    font-size: 23px;
 }
 
 .texto{
     max-width: 900px;
     margin: 0 auto;
     padding: 20px;
-    text-align: center;
+    text-align: justify;
 }
 
