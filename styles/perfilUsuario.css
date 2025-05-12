@@ -10,7 +10,7 @@
     justify-content: flex-start;
     align-items: flex-start;  
     margin: 5em;
-    border: 1px solid var(--azul-escuro);
+    border: 1px solid var(--cinza);
     border-radius: 10px;
     flex-direction: column;
     flex-wrap: wrap;
