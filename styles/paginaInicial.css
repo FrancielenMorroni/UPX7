@@ -55,10 +55,6 @@ header {
     margin-left: 10px;
 }
 
-.inp-filtro{
-    text-decoration: none;
-}
-
 .navbar {
     background-color: #333;
     overflow: hidden;
@@ -133,5 +129,12 @@ header {
 }
 
 .lista-servicos{
-    padding: 4em;
+    padding: 2em 8em;
+    
+}
+
+.lista-img-index{
+    width: 180px;
+    height: 200px;
+    margin: 2em;
 }
